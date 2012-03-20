@@ -1,0 +1,85 @@
+@import "compass/reset","compass/css3";
+$width:16em;
+$height:12em;
+$varLenght1:3em;
+$varLenght2:1em;
+
+*{    
+  margin:0;    
+  padding:0;    
+}    
+body{    
+  font:{
+	  family:arial,sans-serif;    
+	  size:100%;
+  }    
+  margin:#{$varLenght1};    
+  background:url(../images/wood-repeat.jpg) repeat;    
+  color:#ffffcc + #000022;    
+}    
+h2,p{    
+  font:{
+  	size:100%;    
+  	weight:normal;
+  }    
+}    
+#title{
+	font:{
+		size:30px;
+		weight:bold;
+		family:'\5FAE\8F6F\96C5\9ED1';
+	}
+	letter-spacing: 10px;
+	text-align:center;
+	text-shadow:0 1px 1px rgba(0,0,0,0.8);
+} 
+ul{  
+  list-style:none;   
+  overflow:hidden;    
+  padding:#{$varLenght1};
+  li{
+  	    
+  	float:left;
+  	&:nth-child(even) a{
+  		@include transform(rotate(4deg));
+  		top:5px;
+  	}
+  	&:nth-child(3n) a{
+  		@include transform(rotate(-3deg));
+  		top:-5px;
+  		
+  	}&:nth-child(5n) a{
+  		@include transform(rotate(5deg));
+  		top:-10px;
+  		
+  	}
+  	a{
+	  text-decoration:none;    
+	  color:#000;    
+	  background:#eee; 
+	  padding:10px 10px 25px 10px;   
+	  display:block;    
+	  height:#{$height};    
+	  width:#{$width};    
+	  /* padding:#{$varLenght2};*/
+	  position: relative;  
+  	  @include box-shadow(5px 5px 7px rgba(33,33,33,.7));
+  	  @include transform(rotate(-6deg));
+  	  &:hover,&:focus{
+  	  	@include transition(all 0.5s linear);
+  	  	@include box-shadow(10px 10px 7px rgba(0,0,0,.7));
+  	  	@include transform(scale(1.25));
+  	  	position: relative;
+  	  	z-index: 999;
+  	  }
+  	  img{
+  	  	width:100%;
+  	  	height:100%;
+  	  }    
+	  p{
+	  	font-family: 'Fredoka One', cursive;
+	  }
+  	}
+  	
+  }    
+}    
