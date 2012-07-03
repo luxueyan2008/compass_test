@@ -1,4 +1,4 @@
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Ruby192\/lib\/ruby\/gems\/1\.9\.1\/gems\/compass-0\.11\.5\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000317}}
+/* line 17, C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,56 +20,56 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Ruby192\/lib\/ruby\/gems\/1\.9\.1\/gems\/compass-0\.11\.5\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000320}}
+/* line 20, C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 body {
   line-height: 1;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Ruby192\/lib\/ruby\/gems\/1\.9\.1\/gems\/compass-0\.11\.5\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000322}}
+/* line 22, C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Ruby192\/lib\/ruby\/gems\/1\.9\.1\/gems\/compass-0\.11\.5\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000324}}
+/* line 24, C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Ruby192\/lib\/ruby\/gems\/1\.9\.1\/gems\/compass-0\.11\.5\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000326}}
+/* line 26, C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Ruby192\/lib\/ruby\/gems\/1\.9\.1\/gems\/compass-0\.11\.5\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000328}}
+/* line 28, C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Ruby192\/lib\/ruby\/gems\/1\.9\.1\/gems\/compass-0\.11\.5\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\00003101}}
+/* line 101, C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Ruby192\/lib\/ruby\/gems\/1\.9\.1\/gems\/compass-0\.11\.5\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000330}}
+/* line 30, C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Ruby192\/lib\/ruby\/gems\/1\.9\.1\/gems\/compass-0\.11\.5\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\00003114}}
+/* line 114, C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/test\/sass\/default\.scss}line{font-family:\000037}}
+/* line 7, ../sass/default.scss */
 * {
   margin: 0;
   padding: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/test\/sass\/default\.scss}line{font-family:\0000311}}
+/* line 11, ../sass/default.scss */
 body {
   font-family: arial,sans-serif;
   font-size: 100%;
@@ -78,13 +78,13 @@ body {
   color: #ffffee;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/test\/sass\/default\.scss}line{font-family:\0000320}}
+/* line 20, ../sass/default.scss */
 h2, p {
   font-size: 100%;
   font-weight: normal;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/test\/sass\/default\.scss}line{font-family:\0000326}}
+/* line 26, ../sass/default.scss */
 #title {
   font-size: 30px;
   font-weight: bold;
@@ -94,17 +94,17 @@ h2, p {
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/test\/sass\/default\.scss}line{font-family:\0000336}}
+/* line 36, ../sass/default.scss */
 ul {
   list-style: none;
   overflow: hidden;
   padding: 3em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/test\/sass\/default\.scss}line{font-family:\0000340}}
+/* line 40, ../sass/default.scss */
 ul li {
   float: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/test\/sass\/default\.scss}line{font-family:\0000343}}
+/* line 43, ../sass/default.scss */
 ul li:nth-child(even) a {
   -moz-transform: rotate(4deg);
   -webkit-transform: rotate(4deg);
@@ -113,7 +113,7 @@ ul li:nth-child(even) a {
   transform: rotate(4deg);
   top: 5px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/test\/sass\/default\.scss}line{font-family:\0000347}}
+/* line 47, ../sass/default.scss */
 ul li:nth-child(3n) a {
   -moz-transform: rotate(-3deg);
   -webkit-transform: rotate(-3deg);
@@ -122,7 +122,7 @@ ul li:nth-child(3n) a {
   transform: rotate(-3deg);
   top: -5px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/test\/sass\/default\.scss}line{font-family:\0000351}}
+/* line 51, ../sass/default.scss */
 ul li:nth-child(5n) a {
   -moz-transform: rotate(5deg);
   -webkit-transform: rotate(5deg);
@@ -131,7 +131,7 @@ ul li:nth-child(5n) a {
   transform: rotate(5deg);
   top: -10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/test\/sass\/default\.scss}line{font-family:\0000356}}
+/* line 56, ../sass/default.scss */
 ul li a {
   text-decoration: none;
   color: #000;
@@ -152,7 +152,7 @@ ul li a {
   -ms-transform: rotate(-6deg);
   transform: rotate(-6deg);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/test\/sass\/default\.scss}line{font-family:\0000368}}
+/* line 68, ../sass/default.scss */
 ul li a:hover, ul li a:focus {
   -moz-transition: all 0.5s linear;
   -webkit-transition: all 0.5s linear;
@@ -170,12 +170,12 @@ ul li a:hover, ul li a:focus {
   position: relative;
   z-index: 999;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/test\/sass\/default\.scss}line{font-family:\0000375}}
+/* line 75, ../sass/default.scss */
 ul li a img {
   width: 100%;
   height: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/test\/sass\/default\.scss}line{font-family:\0000379}}
+/* line 79, ../sass/default.scss */
 ul li a p {
   font-family: 'Fredoka One', cursive;
 }
