@@ -1,0 +1,1 @@
+demoTask = (start2, end) -> end - start2

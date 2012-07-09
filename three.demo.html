@@ -27,12 +27,21 @@
         camera.position.z = 1000;
         scene.add( camera );
 
-        geometry = new THREE.CubeGeometry( 200, 200, 200 );
-        material = new THREE.MeshBasicMaterial( { color: 0xff0000, wireframe: true } );
+        geometry = new THREE.CubeGeometry( 300, 100, 200 );
+        material = new THREE.MeshLambertMaterial( { color: 0xff0000, wireframe: true } );
 
         mesh = new THREE.Mesh( geometry, material );
         scene.add( mesh );
+        var pointLight =
+        new THREE.PointLight(0xFFFFFF);
 
+        // set its position
+        pointLight.position.x = 10;
+        pointLight.position.y = 50;
+        pointLight.position.z = 130;
+
+        // add to the scene
+        scene.add(pointLight);
         renderer = new THREE.CanvasRenderer();
         renderer.setSize( window.innerWidth, window.innerHeight );
 
