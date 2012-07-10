@@ -2,7 +2,7 @@
 (function() {
 
   $(function() {
-    var demoTask, food, foods, test, _i, _len;
+    var demoTask, fill, food, foods, name, numbers, shortNames, test, _i, _len, _ref;
     demoTask = function(start, end) {
       return end - start;
     };
@@ -13,9 +13,31 @@
         eat(food);
       }
     }
-    return test = function(x) {
+    test = function(x) {
       return x * 2;
     };
+    fill = function(container, liquid) {
+      if (liquid == null) {
+        liquid = "coffee";
+      }
+      return "Filling the " + container + " with " + liquid + "...";
+    };
+    shortNames = (function() {
+      var _j, _len1, _results;
+      _results = [];
+      for (_j = 0, _len1 = list.length; _j < _len1; _j++) {
+        name = list[_j];
+        if (name.length < 5) {
+          _results.push(name);
+        }
+      }
+      return _results;
+    })();
+    numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+    [].splice.apply(numbers, [3, 4].concat(_ref = [-3, -4, -5, -6])), _ref;
+    return window.like({
+      ss: "nihak"
+    });
   });
 
 }).call(this);

@@ -1,0 +1,1 @@
+java -Dfile.encoding=UTF-8  -jar JSBuilder2.jar -p ./combine.jsb2 -d ./js
