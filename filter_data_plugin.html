@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>test_js_version</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/default.css" media="all">
+	
+</head>
+<body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+;(function($){
+	//数据筛选
+	$.extend({
+		dataFilter: function(data,keyWord){
+			if(typeof data == 'object'){
+				var self = arguments.callee;
+				return $.map(data,function(val,index){
+					if(!!~val.name.indexOf(keyWord)){
+						return val;
+					}else if(val.child && $.isArray(val.child) && val.child.length){
+						var val2 = {name:val.name};
+						val2.child=self(val.child,keyWord);
+						if(val2.child.length){
+							return val2;
+						}
+					}
+				});
+			}else{
+				return data;
+			}
+		}
+	});
+})(jQuery);
+$(function(){
+	//demo
+	var demoData =[
+		{
+			name:'haschild',
+			child:[
+				{
+					name:'child1',
+				},{
+					name:'child2',
+				},{
+					name:'child3',
+				},{
+					name:'child4',
+				},{
+					name:'child5',
+				}
+			]
+
+		},{
+			name:'meili_top',
+			child:[]
+		},{
+			name:'has_child2',
+			child:[
+				{
+					name:'meili',
+				},{
+					name:'nihao',
+				},{
+					name:'hello'
+				}
+			]
+		}
+
+	];
+	console.dir($.dataFilter(demoData,'mei'));
+});
+</script>	
+</body>
+</html>

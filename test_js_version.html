@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>test_js_version</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/default.css" media="all">
+	
+</head>
+<body>
+<script type="text/javascript">
+	var JS_ver  = [];     
+	(Number.prototype.toFixed)?JS_ver.push("1.5"):false;     
+	([].indexOf && [].forEach)?JS_ver.push("1.6"):false;     
+	((function(){try {[a,b] = [0,1];return true;}catch(ex) {return false;}})())?JS_ver.push("1.7"):false;     
+	([].reduce && [].reduceRight && JSON)?JS_ver.push("1.8"):false;     
+	("".trimLeft)?JS_ver.push("1.8.1"):false;     
+	JS_ver.supports = function()     
+	{     
+	if (arguments[0])     
+	return (!!~this.join().indexOf(arguments[0] +",") +",");     
+	else  
+	return (this[this.length-1]);     
+	}     
+	alert("Latest Javascript version supported: "+ JS_ver.supports());     
+	alert("Support for version 1.7 : "+ JS_ver.supports("1.7"));   
+</script>	
+
+</body>
+</html>
