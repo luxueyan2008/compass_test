@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>地球</title>
+</head>
+<style type="text/css">
+	#canvasBody{
+		margin:50px auto 0;
+		width:600px;
+	}
+</style>
+<body>
+	<div id="canvasBody">
+		
+	</div>
+	<script type="text/javascript" src="js/raphael.js"></script>
+	<script type="text/javascript" src="js/raphael-animate-along.js"></script>
+	<script type="text/javascript">
+	Raphael(function(){
+		var rH = 540,rW = 600;
+		var r = Raphael("canvasBody", rW, rH);
+		var earthTrack = "M100,270a200,100 0 1,1 0,0.1";
+		var moonTrack = "M60,270a40,40 0 1,1 0,0.1";
+		r.path(earthTrack).attr({stroke:"grey"});
+		var sun = r.circle(rW/2,rH/2,30).attr({"stroke":"red","stroke-width":"1",fill:'red'}).glow({color:"red"});
+		r.setStart();
+		r.path(moonTrack).attr({stroke:"grey"});
+		var earth = r.circle(100,270,20).attr({"stroke":"blue","stroke-width":"1",fill:"0-#00f-#000:80-#0f0"});
+		var moon = r.circle(60,270,10).attr({"stroke":"silver","stroke-width":"1",fill:"0-#0ff-#000:80-#ff0"});
+		var st = r.setFinish();
+		(function(){
+			var _self = arguments.callee;
+			st.animateAlong({
+				path: earthTrack,
+				rotate: true,
+				duration: 5000,
+				isEllipse : true,
+				// easing: 'ease',
+				// debug: true
+			},_self);
+		})()
+	});
+	</script>
+</body>
+</html>
