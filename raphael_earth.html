@@ -15,31 +15,44 @@
 		
 	</div>
 	<script type="text/javascript" src="js/raphael.js"></script>
-	<script type="text/javascript" src="js/raphael-animate-along.js"></script>
+	<!--<script type="text/javascript" src="js/raphael-animate-along.js"></script>-->
 	<script type="text/javascript">
 	Raphael(function(){
 		var rH = 540,rW = 600;
 		var r = Raphael("canvasBody", rW, rH);
-		var earthTrack = "M100,270a200,100 0 1,1 0,0.1";
-		var moonTrack = "M60,270a40,40 0 1,1 0,0.1";
-		r.path(earthTrack).attr({stroke:"grey"});
+		var earthTrack = "M100,270a200,100 0 1,1 0,1z";
+		var moonTrack = "M60,270a40,40 0 1,1 0,1z";
+		var earthPath = r.path(earthTrack).attr({stroke:"grey"});
+		var moonPath = r.path(moonTrack).attr({stroke:"grey"});
 		var sun = r.circle(rW/2,rH/2,30).attr({"stroke":"red","stroke-width":"1",fill:'red'}).glow({color:"red"});
-		r.setStart();
-		r.path(moonTrack).attr({stroke:"grey"});
-		var earth = r.circle(100,270,20).attr({"stroke":"blue","stroke-width":"1",fill:"0-#00f-#000:80-#0f0"});
-		var moon = r.circle(60,270,10).attr({"stroke":"silver","stroke-width":"1",fill:"0-#0ff-#000:80-#ff0"});
-		var st = r.setFinish();
-		(function(){
-			var _self = arguments.callee;
-			st.animateAlong({
-				path: earthTrack,
-				rotate: true,
-				duration: 5000,
-				isEllipse : true,
-				// easing: 'ease',
-				// debug: true
-			},_self);
-		})()
+		var earth = r.circle(100,270,20).attr({"stroke":"blue","stroke-width":"1",fill:"0-#00f-#000:50-#0f0"});
+		var moon = r.circle(60,270,10).attr({"stroke":"silver","stroke-width":"1",fill:"0-#0ff-#000:50-#ff0"});
+		var animation = window.setInterval(function(){animate()}, 10); 
+		var counter = 0;    
+		var amLength = 36500;
+		function animate(){
+		    if(counter > amLength){  
+		        counter = 0;
+		    }
+		    var pos1 = earthPath.getPointAtLength(counter/amLength * earthPath.getTotalLength());
+		    var pos2 = moonPath.getPointAtLength(counter*13.36/amLength%1 * moonPath.getTotalLength());
+		    earth.attr({cx: pos1.x, cy: pos1.y,transform:['r',counter*365/amLength%1*360]});  
+		    moon.attr({cx: pos2.x, cy: pos2.y,transform:['r',counter*13.36/amLength%1*360]});
+		    moonPath.attr({path:moonTrack.replace("M60,270",["M",pos1.x-40,pos1.y])});
+		    counter++; 
+		};
+		// console.log(earth.matrix.split());
+		// (function(){
+		// 	var _self = arguments.callee;
+		// 	earth.animateAlong({
+		// 		path: earthTrack,
+		// 		rotate: true,
+		// 		duration: 5000,
+		// 		isEllipse : true,
+		// 		// easing: 'ease',
+		// 		// debug: true
+		// 	},_self);
+		// })()
 	});
 	</script>
 </body>

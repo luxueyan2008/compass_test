@@ -48,6 +48,7 @@ function genAnimate(params, props, callback){
 	duration = params.duration,
 	easing = params.easing,
 	debug = params.debug,
+	repeat = params.repeat || 0,
 	isEllipse = params.isEllipse || false,//添加属性 指定element是否是圆或者是椭圆
 	isElem = typeof path !== 'string';
 
@@ -94,22 +95,22 @@ function genAnimate(params, props, callback){
 	}
 	
 	var startAlong = element.attr('along') || 0;
-	
-	element.attr({along: startAlong}).animate(props, duration, easing, function() {
-		element.attr({along: startAlong});//添加初始化位置到0 以便递归循环
+	var am = Raphael.animation(props, duration, easing, function() {
+		element.attr({along: 0});//添加初始化位置到0 以便递归循环
 		!isElem && element.path.remove();
 		callback && callback.call(element);
 	});
+	element.attr({along: startAlong}).animate(am);
 }
 
-Raphael.st.animateAlong = function(params, props, callback){
-	for(var i = 0 ;i < this.length;i++){
-		(function(e){
-			genAnimate.call(e,params,props,callback);
-		})(this[i]);
-	}
+// Raphael.st.animateAlong = function(params, props, callback){
+// 	for(var i = 0 ;i < this.length;i++){
+// 		(function(e){
+// 			genAnimate.call(e,params,props,callback);
+// 		})(this[i]);
+// 	}
 	
-};
+// };
 Raphael.el.animateAlong = function(params, props, callback) {
 	genAnimate.call(this,params,props,callback);
 };

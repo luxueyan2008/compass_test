@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style type="text/css">
+        #canvas {
+            margin : 0 auto;
+            width  : 600px;
+        }
+    </style>
+</head>
+<body>
+<div id="canvas"></div>
+<script type="text/javascript" src="js/raphael.js"></script>
+<script type="text/javascript">
+    var w = 600, h = 480, r = 10;
+    var deg = Math.PI/360;
+    var cur = 0;
+    var paper = Raphael("canvas", w, h);
+    function DrawSystem() {
+        paper.clear();
+        DrawBg.call(paper);
+        DrawSun.call(paper);
+        var earth = DrawEarth.call(paper);
+        DrawMoon.call(paper,earth);
+    }
+    function DrawBg() {
+        paper.rect(0, 0, w, h,r).attr({
+            fill  :'#ccc',
+            stroke:'none'
+        })
+    }
+    function DrawSun() {
+        this.circle(w/2,h/2,r*5).attr({
+            fill:'red',
+            stroke:'none'
+        })
+    }
+    function DrawEarth() {
+        var earth = this.circle(w/2,h/2,r*2).attr({
+            fill:'blue',
+            stroke:'none'
+        });
+        earth.translate(r*20*Math.cos(cur),r*15*Math.sin(cur));/*椭圆公式 大圆半径r*20 小圆半径r*15*/
+        return earth;
+    }
+    function DrawMoon(earth) {
+        var point = earth.matrix.split();
+        var moon = this.circle(w/2,h/2,r).attr({
+            fill:'yellow',
+            stroke:'none'
+        }).translate(point.dx+r*5*Math.cos(cur*2),point.dy+r*4*Math.sin(cur*2));/*速率是地球围绕太阳的两倍,距离地球最近r*4,最远r*5 */
+    }
+    setInterval(function(){
+        DrawSystem();
+        cur += deg;
+    },10)
+</script>
+</body>
+</html>
