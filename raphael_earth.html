@@ -17,6 +17,27 @@
 	<script type="text/javascript" src="js/raphael.js"></script>
 	<!--<script type="text/javascript" src="js/raphael-animate-along.js"></script>-->
 	<script type="text/javascript">
+	/**
+	 * [roundedRectangle 圆角矩形拓展]
+	 * @param  {[type]} x  [description]
+	 * @param  {[type]} y  [description]
+	 * @param  {[type]} w  [description]
+	 * @param  {[type]} h  [description]
+	 * @param  {[type]} r1 [description]
+	 * @param  {[type]} r2 [description]
+	 * @param  {[type]} r3 [description]
+	 * @param  {[type]} r4 [description]
+	 * @return {[type]}    [description]
+	 */
+	Raphael.fn.roundedRectangle = function (x, y, w, h, r1, r2, r3, r4){
+	  var array = [];
+	  array = array.concat(["M",x,r1+y, "Q",x,y, x+r1,y]); //A
+	  array = array.concat(["L",x+w-r2,y, "Q",x+w,y, x+w,y+r2]); //B
+	  array = array.concat(["L",x+w,y+h-r3, "Q",x+w,y+h, x+w-r3,y+h]); //C
+	  array = array.concat(["L",x+r4,y+h, "Q",x,y+h, x,y+h-r4, "Z"]); //D
+
+	  return this.path(array);
+	};
 	Raphael(function(){
 		var rH = 540,rW = 600;
 		var r = Raphael("canvasBody", rW, rH);
@@ -24,7 +45,8 @@
 		var moonTrack = "M60,270a40,40 0 1,1 0,1z";
 		var earthPath = r.path(earthTrack).attr({stroke:"grey"});
 		var moonPath = r.path(moonTrack).attr({stroke:"grey"});
-		var sun = r.circle(rW/2,rH/2,30).attr({"stroke":"red","stroke-width":"1",fill:'red'}).glow({color:"red"});
+		var sun = r.circle(rW/2,rH/2,30).attr({"stroke":"red","stroke-width":"1",fill:'red'});
+		var glow = sun.glow({color:"red"});
 		var earth = r.circle(100,270,20).attr({"stroke":"blue","stroke-width":"1",fill:"0-#00f-#000:50-#0f0"});
 		var moon = r.circle(60,270,10).attr({"stroke":"silver","stroke-width":"1",fill:"0-#0ff-#000:50-#ff0"});
 		var animation = window.setInterval(function(){animate()}, 10); 
@@ -34,6 +56,8 @@
 		    if(counter > amLength){  
 		        counter = 0;
 		    }
+		    glow.remove();
+		    glow = sun.glow({width:counter/10%10,color:"red"});
 		    var pos1 = earthPath.getPointAtLength(counter/amLength * earthPath.getTotalLength());
 		    var pos2 = moonPath.getPointAtLength(counter*13.36/amLength%1 * moonPath.getTotalLength());
 		    earth.attr({cx: pos1.x, cy: pos1.y,transform:['r',counter*365/amLength%1*360]});  
@@ -41,18 +65,21 @@
 		    moonPath.attr({path:moonTrack.replace("M60,270",["M",pos1.x-40,pos1.y])});
 		    counter++; 
 		};
-		// console.log(earth.matrix.split());
-		// (function(){
-		// 	var _self = arguments.callee;
-		// 	earth.animateAlong({
-		// 		path: earthTrack,
-		// 		rotate: true,
-		// 		duration: 5000,
-		// 		isEllipse : true,
-		// 		// easing: 'ease',
-		// 		// debug: true
-		// 	},_self);
-		// })()
+		//测试圆角矩形
+		// r.roundedRectangle(100,100,100,100,5,5,5,5);
+		//测试animatealong 插件
+		/*console.log(earth.matrix.split());
+		(function(){
+			var _self = arguments.callee;
+			earth.animateAlong({
+				path: earthTrack,
+				rotate: true,
+				duration: 5000,
+				isEllipse : true,
+				// easing: 'ease',
+				// debug: true
+			},_self);
+		})()*/
 	});
 	</script>
 </body>
