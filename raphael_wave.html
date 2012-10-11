@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>波浪</title>
+</head>
+<style type="text/css">
+	#canvasBody{
+		margin:50px auto 0;
+		width:600px;
+	}
+</style>
+<body>
+	<div id="canvasBody">
+		
+	</div>
+	<script type="text/javascript" src="js/raphael.js"></script>
+	<script type="text/javascript" src="js/raphael.easing.1.3.js"></script>
+	<script type="text/javascript">
+	Raphael(function(){
+		var rH = 540,rW = 600;
+		var wavePropers = {
+			width:100,
+			height:50
+		};
+		var waveCount = Math.ceil(rW/wavePropers.width);
+		var r = Raphael("canvasBody", rW, rH);
+		var pathStr1 = 'M0,300c';
+		var pathStr2 = 'M0,290c';
+		var rnd ;
+		for(var i = 0;i < waveCount;i++){
+			rnd = Math.random();
+			pathStr1 += [' 0,0 ',wavePropers.width/2+(rnd-0.5)*wavePropers.width/2,',',wavePropers.height,' ',wavePropers.width ,',',0,' '];
+			rnd = Math.random();
+			pathStr2 += [' 0,0 ',wavePropers.width/2+(rnd-0.5)*wavePropers.width/2,',',wavePropers.height,' ',wavePropers.width ,',',0,' '];
+		}
+		pathStr1 += 'L600,400 0,400,0z';
+		pathStr2 += 'L600,400 0,400,0z';
+		var wavePath = r.path(pathStr1).attr({stroke:'#9FD9D9','stroke-width':3,fill:'#21A7A6'});
+		var anim1 = function(){
+			
+			wavePath.animate(Raphael.animation({path:pathStr1},800,'<>',anim2))
+		}
+		var anim2 = function(){
+
+			wavePath.animate(Raphael.animation({path:pathStr2},800,'<>',anim1));
+		} 
+		anim1();
+		
+	});
+	</script>
+</body>
+</html>
