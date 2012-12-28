@@ -1,0 +1,701 @@
+/* line 17, d:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, d:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, d:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, d:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, d:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, d:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, d:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, d:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, d:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/***********************base style begin*******************************/
+/* line 4, ../../sass/my_template/base.scss */
+.dn {
+  display: none;
+}
+
+/* line 4, ../../sass/my_template/base.scss */
+.db {
+  display: block;
+}
+
+/* line 4, ../../sass/my_template/base.scss */
+.dib {
+  display: inline-block;
+}
+
+/* line 4, ../../sass/my_template/base.scss */
+.di {
+  display: inline;
+}
+
+/* line 5, ../../sass/my_template/base.scss */
+.h14 {
+  height: 14px;
+}
+
+/* line 5, ../../sass/my_template/base.scss */
+.h16 {
+  height: 16px;
+}
+
+/* line 5, ../../sass/my_template/base.scss */
+.h18 {
+  height: 18px;
+}
+
+/* line 5, ../../sass/my_template/base.scss */
+.h20 {
+  height: 20px;
+}
+
+/* line 5, ../../sass/my_template/base.scss */
+.h22 {
+  height: 22px;
+}
+
+/* line 5, ../../sass/my_template/base.scss */
+.h24 {
+  height: 24px;
+}
+
+/* line 6, ../../sass/my_template/base.scss */
+.lh14 {
+  line-height: 14px;
+}
+
+/* line 6, ../../sass/my_template/base.scss */
+.lh16 {
+  line-height: 16px;
+}
+
+/* line 6, ../../sass/my_template/base.scss */
+.lh18 {
+  line-height: 18px;
+}
+
+/* line 6, ../../sass/my_template/base.scss */
+.lh20 {
+  line-height: 20px;
+}
+
+/* line 6, ../../sass/my_template/base.scss */
+.lh22 {
+  line-height: 22px;
+}
+
+/* line 6, ../../sass/my_template/base.scss */
+.lh24 {
+  line-height: 24px;
+}
+
+/* line 7, ../../sass/my_template/base.scss */
+.m0 {
+  margin: 0;
+}
+
+/* line 7, ../../sass/my_template/base.scss */
+.ml1 {
+  margin-left: 1px;
+}
+
+/* line 7, ../../sass/my_template/base.scss */
+.ml2 {
+  margin-left: 2px;
+}
+
+/* line 7, ../../sass/my_template/base.scss */
+.ml5 {
+  margin-left: 5px;
+}
+
+/* line 7, ../../sass/my_template/base.scss */
+.ml10 {
+  margin-left: 10px;
+}
+
+/* line 7, ../../sass/my_template/base.scss */
+.ml20 {
+  margin-left: 20px;
+}
+
+/* line 7, ../../sass/my_template/base.scss */
+.mr1 {
+  margin-right: 1px;
+}
+
+/* line 7, ../../sass/my_template/base.scss */
+.mr2 {
+  margin-right: 2px;
+}
+
+/* line 7, ../../sass/my_template/base.scss */
+.mr5 {
+  margin-right: 5px;
+}
+
+/* line 7, ../../sass/my_template/base.scss */
+.mr10 {
+  margin-right: 10px;
+}
+
+/* line 7, ../../sass/my_template/base.scss */
+.mr20 {
+  margin-right: 20px;
+}
+
+/* line 7, ../../sass/my_template/base.scss */
+.mt1 {
+  margin-top: 1px;
+}
+
+/* line 7, ../../sass/my_template/base.scss */
+.mt2 {
+  margin-top: 2px;
+}
+
+/* line 7, ../../sass/my_template/base.scss */
+.mt5 {
+  margin-top: 5px;
+}
+
+/* line 7, ../../sass/my_template/base.scss */
+.mt10 {
+  margin-top: 10px;
+}
+
+/* line 7, ../../sass/my_template/base.scss */
+.mt20 {
+  margin-top: 20px;
+}
+
+/* line 7, ../../sass/my_template/base.scss */
+.mb1 {
+  margin-bottom: 1px;
+}
+
+/* line 7, ../../sass/my_template/base.scss */
+.mb2 {
+  margin-bottom: 2px;
+}
+
+/* line 7, ../../sass/my_template/base.scss */
+.mb5 {
+  margin-bottom: 5px;
+}
+
+/* line 7, ../../sass/my_template/base.scss */
+.mb10 {
+  margin-bottom: 10px;
+}
+
+/* line 7, ../../sass/my_template/base.scss */
+.mb20 {
+  margin-bottom: 20px;
+}
+
+/* line 7, ../../sass/my_template/base.scss */
+.ml-1 {
+  margin-left: -1px;
+}
+
+/* line 7, ../../sass/my_template/base.scss */
+.mt-1 {
+  margin-top: -1px;
+}
+
+/* line 8, ../../sass/my_template/base.scss */
+.p1 {
+  padding: 1px;
+}
+
+/* line 8, ../../sass/my_template/base.scss */
+.pl1 {
+  padding-left: 1px;
+}
+
+/* line 8, ../../sass/my_template/base.scss */
+.pt1 {
+  padding-top: 1px;
+}
+
+/* line 8, ../../sass/my_template/base.scss */
+.pr1 {
+  padding-right: 1px;
+}
+
+/* line 8, ../../sass/my_template/base.scss */
+.pb1 {
+  padding-bottom: 1px;
+}
+
+/* line 8, ../../sass/my_template/base.scss */
+.p2 {
+  padding: 2px;
+}
+
+/* line 8, ../../sass/my_template/base.scss */
+.pl2 {
+  padding-left: 2px;
+}
+
+/* line 8, ../../sass/my_template/base.scss */
+.pt2 {
+  padding-top: 2px;
+}
+
+/* line 8, ../../sass/my_template/base.scss */
+.pr2 {
+  padding-right: 2px;
+}
+
+/* line 8, ../../sass/my_template/base.scss */
+.pb2 {
+  padding-bottom: 2px;
+}
+
+/* line 8, ../../sass/my_template/base.scss */
+.pl5 {
+  padding-left: 5px;
+}
+
+/* line 8, ../../sass/my_template/base.scss */
+.p5 {
+  padding: 5px;
+}
+
+/* line 8, ../../sass/my_template/base.scss */
+.pt5 {
+  padding-top: 5px;
+}
+
+/* line 8, ../../sass/my_template/base.scss */
+.pr5 {
+  padding-right: 5px;
+}
+
+/* line 8, ../../sass/my_template/base.scss */
+.pb5 {
+  padding-bottom: 5px;
+}
+
+/* line 8, ../../sass/my_template/base.scss */
+.p10 {
+  padding: 10px;
+}
+
+/* line 8, ../../sass/my_template/base.scss */
+.pl10 {
+  padding-left: 10px;
+}
+
+/* line 8, ../../sass/my_template/base.scss */
+.pt10 {
+  padding-top: 10px;
+}
+
+/* line 8, ../../sass/my_template/base.scss */
+.pr10 {
+  padding-right: 10px;
+}
+
+/* line 8, ../../sass/my_template/base.scss */
+.pb10 {
+  padding-bottom: 10px;
+}
+
+/* line 8, ../../sass/my_template/base.scss */
+.p20 {
+  padding: 20px;
+}
+
+/* line 8, ../../sass/my_template/base.scss */
+.pl20 {
+  padding-left: 20px;
+}
+
+/* line 8, ../../sass/my_template/base.scss */
+.pt20 {
+  padding-top: 20px;
+}
+
+/* line 8, ../../sass/my_template/base.scss */
+.pr20 {
+  padding-right: 20px;
+}
+
+/* line 8, ../../sass/my_template/base.scss */
+.pb20 {
+  padding-bottom: 20px;
+}
+
+/* line 9, ../../sass/my_template/base.scss */
+.g0 {
+  color: #000;
+}
+
+/* line 9, ../../sass/my_template/base.scss */
+.g3 {
+  color: #333;
+}
+
+/* line 9, ../../sass/my_template/base.scss */
+.g6 {
+  color: #666;
+}
+
+/* line 9, ../../sass/my_template/base.scss */
+.g9 {
+  color: #999;
+}
+
+/* line 9, ../../sass/my_template/base.scss */
+.wh {
+  color: white;
+}
+
+/* line 10, ../../sass/my_template/base.scss */
+.f0 {
+  font-size: 0;
+}
+
+/* line 10, ../../sass/my_template/base.scss */
+.f10 {
+  font-size: 10px;
+}
+
+/* line 10, ../../sass/my_template/base.scss */
+.f12 {
+  font-size: 12px;
+}
+
+/* line 10, ../../sass/my_template/base.scss */
+.f13 {
+  font-size: 13px;
+}
+
+/* line 10, ../../sass/my_template/base.scss */
+.f14 {
+  font-size: 14px;
+}
+
+/* line 10, ../../sass/my_template/base.scss */
+.f16 {
+  font-size: 16px;
+}
+
+/* line 10, ../../sass/my_template/base.scss */
+.f20 {
+  font-size: 20px;
+}
+
+/* line 10, ../../sass/my_template/base.scss */
+.f24 {
+  font-size: 24px;
+}
+
+/* line 11, ../../sass/my_template/base.scss */
+.fa {
+  font-family: Arial;
+}
+
+/* line 11, ../../sass/my_template/base.scss */
+.ft {
+  font-family: Tahoma;
+}
+
+/* line 11, ../../sass/my_template/base.scss */
+.fv {
+  font-family: Verdana;
+}
+
+/* line 11, ../../sass/my_template/base.scss */
+.fs {
+  font-family: '\5B8B\4F53';
+}
+
+/* line 11, ../../sass/my_template/base.scss */
+.fw {
+  font-family: 'Microsoft YaHei','\5FAE\8F6F\96C5\9ED1','Hiragino Sans GB','Hiragino Sans GB W3','helvetica','sans-serif';
+}
+
+/* line 12, ../../sass/my_template/base.scss */
+.n {
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 12, ../../sass/my_template/base.scss */
+.b {
+  font-weight: bold;
+}
+
+/* line 12, ../../sass/my_template/base.scss */
+.i {
+  font-style: italic;
+}
+
+/* line 13, ../../sass/my_template/base.scss */
+.tc {
+  text-align: center;
+}
+
+/* line 13, ../../sass/my_template/base.scss */
+.tr {
+  text-align: right;
+}
+
+/* line 13, ../../sass/my_template/base.scss */
+.tl {
+  text-align: left;
+}
+
+/* line 13, ../../sass/my_template/base.scss */
+.tj {
+  text-align: justify;
+}
+
+/* line 14, ../../sass/my_template/base.scss */
+.tdl {
+  text-decoration: underline;
+}
+
+/* line 14, ../../sass/my_template/base.scss */
+.tdn, .tdn:hover, a.tdl:hover {
+  text-decoration: none;
+}
+
+/* line 15, ../../sass/my_template/base.scss */
+.lt0 {
+  letter-spacing: 0;
+}
+
+/* line 15, ../../sass/my_template/base.scss */
+lt1 {
+  letter-spacing: 1px;
+}
+
+/* line 16, ../../sass/my_template/base.scss */
+.wrap {
+  white-space: nowrap;
+}
+
+/* line 17, ../../sass/my_template/base.scss */
+.bk {
+  word-wrap: break-word;
+}
+
+/* line 18, ../../sass/my_template/base.scss */
+.vm {
+  vertical-align: middle;
+}
+
+/* line 18, ../../sass/my_template/base.scss */
+.vtb {
+  vertical-align: text-bottom;
+}
+
+/* line 18, ../../sass/my_template/base.scss */
+.vb {
+  vertical-align: bottom;
+}
+
+/* line 18, ../../sass/my_template/base.scss */
+.vt {
+  vertical-align: top;
+}
+
+/* line 18, ../../sass/my_template/base.scss */
+.vn {
+  vertical-align: -2px;
+}
+
+/* line 19, ../../sass/my_template/base.scss */
+.l, .fl {
+  float: left;
+}
+
+/* line 19, ../../sass/my_template/base.scss */
+.r, .fr {
+  float: right;
+}
+
+/* line 20, ../../sass/my_template/base.scss */
+.cl {
+  clear: both;
+}
+
+/* line 21, ../../sass/my_template/base.scss */
+.rel {
+  position: relative;
+}
+
+/* line 21, ../../sass/my_template/base.scss */
+.abs {
+  position: absolute;
+}
+
+/* line 22, ../../sass/my_template/base.scss */
+.zx1 {
+  z-index: 1;
+}
+
+/* line 22, ../../sass/my_template/base.scss */
+.zx2 {
+  z-index: 2;
+}
+
+/* line 23, ../../sass/my_template/base.scss */
+.poi {
+  cursor: pointer;
+}
+
+/* line 23, ../../sass/my_template/base.scss */
+.def {
+  cursor: default;
+}
+
+/* line 24, ../../sass/my_template/base.scss */
+.ovh {
+  overflow: hidden;
+}
+
+/* line 25, ../../sass/my_template/base.scss */
+.vh {
+  visibility: hidden;
+}
+
+/* line 25, ../../sass/my_template/base.scss */
+.vv {
+  visibility: visible;
+}
+
+/* line 26, ../../sass/my_template/base.scss */
+.z {
+  *zoom: 1;
+}
+
+/* line 27, ../../sass/my_template/base.scss */
+.mr25 {
+  margin-right: 25px;
+}
+
+/*horizonal align center of block*/
+/* line 29, ../../sass/my_template/base.scss */
+.auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*clear float*/
+/* line 31, ../../sass/my_template/base.scss */
+.fix {
+  *zoom: 1;
+}
+
+/* line 31, ../../sass/my_template/base.scss */
+.fix:after {
+  display: block;
+  content: "clear";
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+/*display:table-cell autofill layout*/
+/* line 33, ../../sass/my_template/base.scss */
+.cell {
+  display: table-cell;
+  *display: inline-block;
+  width: 2000px;
+  *width: auto;
+}
+
+/*word break of table*/
+/* line 35, ../../sass/my_template/base.scss */
+.cell_bk {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  word-wrap: break-word;
+}
+
+/*ellipsis*/
+/* line 37, ../../sass/my_template/base.scss */
+.ell, .ellip {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/***********************base style end*******************************/
+/* line 40, ../../sass/my_template/base.scss */
+::-webkit-input-placeholder {
+  color: #999;
+}
+
+/* line 43, ../../sass/my_template/base.scss */
+:-moz-placeholder {
+  color: #999;
+}
+
+/* line 46, ../../sass/my_template/base.scss */
+:-ms-input-placeholder {
+  color: #999;
+}

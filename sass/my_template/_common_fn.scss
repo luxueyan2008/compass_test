@@ -1,0 +1,7 @@
+@import "compass","config";
+@mixin ellip($width:100px){
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	width:$width;
+}

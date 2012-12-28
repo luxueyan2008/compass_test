@@ -1,4 +1,4 @@
-/* line 17, C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, d:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -15,50 +15,50 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   font: inherit;
+  font-size: 100%;
   vertical-align: baseline;
 }
 
-/* line 20, C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-body {
+/* line 22, d:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
   line-height: 1;
 }
 
-/* line 22, C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, d:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 24, C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, d:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 26, C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, d:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 28, C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, d:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 101, C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, d:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 30, C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, d:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 114, C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, d:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -106,28 +106,28 @@ ul li {
 }
 /* line 43, ../sass/default.scss */
 ul li:nth-child(even) a {
-  -moz-transform: rotate(4deg);
   -webkit-transform: rotate(4deg);
-  -o-transform: rotate(4deg);
+  -moz-transform: rotate(4deg);
   -ms-transform: rotate(4deg);
+  -o-transform: rotate(4deg);
   transform: rotate(4deg);
   top: 5px;
 }
 /* line 47, ../sass/default.scss */
 ul li:nth-child(3n) a {
-  -moz-transform: rotate(-3deg);
   -webkit-transform: rotate(-3deg);
-  -o-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
   -ms-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
   transform: rotate(-3deg);
   top: -5px;
 }
 /* line 51, ../sass/default.scss */
 ul li:nth-child(5n) a {
-  -moz-transform: rotate(5deg);
   -webkit-transform: rotate(5deg);
-  -o-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
   -ms-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
   transform: rotate(5deg);
   top: -10px;
 }
@@ -142,30 +142,28 @@ ul li a {
   width: 16em;
   /* padding:#{$varLenght2};*/
   position: relative;
-  -moz-box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
   -webkit-box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
-  -o-box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+  -moz-box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
   box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
-  -moz-transform: rotate(-6deg);
   -webkit-transform: rotate(-6deg);
-  -o-transform: rotate(-6deg);
+  -moz-transform: rotate(-6deg);
   -ms-transform: rotate(-6deg);
+  -o-transform: rotate(-6deg);
   transform: rotate(-6deg);
 }
 /* line 68, ../sass/default.scss */
 ul li a:hover, ul li a:focus {
-  -moz-transition: all 0.5s linear;
   -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
   -o-transition: all 0.5s linear;
   transition: all 0.5s linear;
-  -moz-box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.7);
   -webkit-box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.7);
-  -o-box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.7);
   box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.7);
-  -moz-transform: scale(1.25);
   -webkit-transform: scale(1.25);
-  -o-transform: scale(1.25);
+  -moz-transform: scale(1.25);
   -ms-transform: scale(1.25);
+  -o-transform: scale(1.25);
   transform: scale(1.25);
   position: relative;
   z-index: 999;
